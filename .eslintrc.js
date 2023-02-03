@@ -6,8 +6,17 @@ module.exports = {
     'extends': [
         'eslint:recommended',
         'plugin:react/recommended',
-        'plugin:@typescript-eslint/recommended'
+        'plugin:@typescript-eslint/recommended',
+        'plugin:import/errors',
+        'plugin:import/warnings'
     ],
+    'settings': {
+        'import/resolver': {
+            'node': {
+                'extensions': ['.js', '.jsx', '.ts', '.tsx']
+            }
+        }
+    },
     'parser': '@typescript-eslint/parser',
     'parserOptions': {
         'ecmaFeatures': {
