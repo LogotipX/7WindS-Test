@@ -1,0 +1,38 @@
+.header-panel {
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid #414144;
+
+    .btns-container {
+        display: flex;
+        justify-content: space-between;
+        width: 58px;
+    }
+
+    .nav-links-container {
+        display: flex;
+        position: relative;
+        width: fit-content;
+        padding-left: 34px;
+
+        & > *:not(:first-child) {
+            margin-left: 24px;
+        }
+
+        .nav-links__btn {
+            padding: 13px 2px 0;
+            cursor: pointer;
+
+            &:hover {
+                color: #fff;
+                border-bottom: 2px solid #fff;
+                transition: 65ms all linear;
+            }
+        }
+
+        .selected {
+            border-bottom: 2px solid #fff;
+            cursor: default;
+        }
+    }
+}
