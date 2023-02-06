@@ -1,19 +1,11 @@
 $bg-color-main: #27272a;
 $bg-color-second: #202124;
 
+$border-main-color: #414144;
+
 $text-color-main: #fff;
 $text-color-simple: $text-color-main;
 $text-color-muted: #a1a1aa;
-
-$pt-0: 0;
-$pr-0: 0;
-$pb-0: 0;
-$pl-0: 0;
-
-$px-0: $pl-0 $pr-0;
-$py-0: $pt-0 $pb-0;
-
-$p-0: $px-0 $py-0;
 
 $p-3_5: 0.875rem; // 14px
 
@@ -75,6 +67,36 @@ $p-6: 1.5rem; // 24px
 
 .bg-second {
     background-color: $bg-color-second;
+}
+
+.border-main {
+    border: 1px solid $border-main-color;
+}
+
+.border-main-x {
+    border-left: 1px solid $border-main-color;
+    border-right: 1px solid $border-main-color;
+}
+
+.border-main-y {
+    border-top: 1px solid $border-main-color;
+    border-bottom: 1px solid $border-main-color;
+}
+
+.border-main-t {
+    border-top: 1px solid $border-main-color;
+}
+
+.border-main-r {
+    border-right: 1px solid $border-main-color;
+}
+
+.border-main-b {
+    border-bottom: 1px solid $border-main-color;
+}
+
+.border-main-l {
+    border-left: 1px solid $border-main-color;
 }
 
 .text-main {
